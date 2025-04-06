@@ -26,9 +26,21 @@
     }
     /* リンクテキストのスタイル */
     .link-text {
+      display: inline-block;
       font-weight: bold;
-      margin-bottom: 10px; /* 画像との間に適度な余白を追加 */
-      font-size: 2.4em; /* もともと1.2emだったものを2倍に */
+      font-size: 2.4em; /* 文字サイズを元の2倍に */
+      padding: 10px 20px;
+      background-color: #eee;
+      border-radius: 5px;
+      text-decoration: none; /* 下線を除去 */
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      margin-bottom: 10px; /* 画像との間に適度な余白 */
+    }
+    /* ホバー効果で色や背景を変更 */
+    .link-text:hover {
+      background-color: #ccc;
+      color: #000;
     }
   </style>
 </head>
@@ -36,9 +48,9 @@
   <div class="container">
     <!-- 改行を追加 -->
     <br>
-    <!-- リンクテキスト -->
+    <!-- ホバー効果付きのリンクテキスト -->
     <a class="link-text" href="https://r.qrqrq.com/LmtxK5Ie" target="_blank">
-      【Go back to "AI Product locatsion NAVI"】
+      【Clock ☞ back to "AI Product locatsion NAVI"】
     </a>
     <img src="images/00442_floormap_01.jpg" alt="フロアマップ1">
     <img src="images/00442_floormap_02.jpg" alt="フロアマップ2">
